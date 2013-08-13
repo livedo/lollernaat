@@ -62,7 +62,12 @@ flow.push_to_team_inbox(:subject => "Lounas tänään",
 
 # Randomly post something to chat to draw attention
 sleep 4
-comments = ["aikamoiset lolnaat", "huhhuh, onneks ei oo happokalaa", "taitaa olla kaljapäivä!", "taitaa olla burgeripäivä", "oisko vegemesta?", "LOUNAS!", "omnomnomnom tofuburgerii", "toivottavasti o rokkikokki, muuten syön pelkkää kaljaa!"]
+comments = ["aikamoiset lolnaat", "huhhuh, onneks ei oo happokalaa",
+  "taitaa olla kaljapäivä!", "taitaa olla burgeripäivä", "oisko vegemesta?",
+  "LOUNAS!", "omnomnomnom tofuburgerii",
+  "toivottavasti o rokkikokki, muuten syön pelkkää kaljaa!",
+  "otettaisko appelsiiniankka uusiks?"
+]
 flow.push_to_chat(:content => comments[rand(comments.length)], :tags => "")
 
 
